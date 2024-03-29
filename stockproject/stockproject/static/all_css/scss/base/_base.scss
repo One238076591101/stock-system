@@ -1,0 +1,178 @@
+@charset "utf-8";
+
+
+/* -------------
+    $ scss
+------------- */
+
+/* font */
+$font-stack: "微軟正黑體","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"新細明體","蘋果儷黑體",Verdana,sans-serif;
+
+/* color */
+$color-bg: #000;
+$yellow-bg: #ffc801;
+$blue-bg: #1f216f;
+
+/* mixin */
+@mixin mouseover($sec) {
+    -webkit-transition: all $sec ease-Out;
+    -moz-transition: all $sec ease-Out;
+    -o-transition: all $sec ease-Out;
+    transition: all $sec ease-Out;
+}
+
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }  
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }  
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+@mixin animation($str) {
+    -webkit-animation: #{$str};
+    -moz-animation: #{$str};
+    -ms-animation: #{$str};
+    -o-animation: #{$str};
+    animation: #{$str};      
+}
+
+@include keyframes(fadeIn) {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@include keyframes(fadeOut) {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@mixin befaft{
+    content: "";
+    display: block;
+}
+
+@mixin circle{
+    border-radius: 50%;
+}
+
+@mixin bg($name , $repeat , $pos , $size , $color){
+    background-image: url('#{$name}');
+    background-repeat: $repeat;
+    background-position: $pos;
+    background-size: $size;
+    background-color: $color;
+}
+
+@mixin centerbox{
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+
+
+/* -------------
+    ALL USE
+------------- */
+
+
+img{
+    width: 100%;
+    display: block;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+}
+
+.c{
+    clear: both;
+}
+
+.table{
+    display: table;
+}
+
+.tr{
+    display: table-row;
+}
+
+.th , .td{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.hide{
+    display: none;
+}
+
+.ab{
+    position: absolute;
+}
+
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.float-l{
+    float: left;
+}
+
+.float-r{
+    float: right;
+}
+
+._m{
+    display: none;
+    @include media(w768){
+        display: block;   
+    }
+}
+
+._pc{
+    @include media(w768){
+        display: none;   
+    }
+}
+
+.autoW{
+    width: auto;
+}
+
+
+
+/* vw換算 */
+
+$baseFullW: 1920;
+$baseWinW: 1366;
+$baseTabW: 1024;
+$baseMobileW: 768;
+
+@function full ($num: 1) {
+    @return $num * 100 / $baseFullW + vw;
+}
+
+@function win ($num: 1) {
+    @return $num * 100 / $baseWinW + vw;
+}
+
+@function tab ($num: 1) {
+    @return $num * 100 / $baseTabW + vw;
+}
+
+@function mob ($num: 1) {
+    @return $num * 100 / $baseMobileW + vw;
+}

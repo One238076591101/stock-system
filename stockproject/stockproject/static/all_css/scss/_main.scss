@@ -1,0 +1,478 @@
+html,
+body {
+    width: 100%;
+    // background-color: #000;
+    overflow-x: hidden;
+    background:#000 url('../../img/bg3.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center right
+}
+
+.row {
+    margin: 0;
+
+    .col-2 {
+        background-color: #000;
+        padding: 0;
+        height: 100vh;
+        color: white;
+        background-image: url('../../img/bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        margin: 0;
+        padding: 0 2%;
+        // animation: bg 10s infinite forwards alternate;
+
+        @keyframes bg {
+            0% {
+                background-position: 10%;
+            }
+
+            100% {
+                background-position: 0%;
+            }
+        }
+
+        .title {
+            h3 {
+                margin: 0;
+                padding: 30% 0;
+            }
+        }
+
+
+        .sidebar-sticky {
+
+
+
+            .nav {
+
+                .nav-link {
+                    padding: 1rem;
+                }
+
+                a {
+                    display: flex;
+
+
+                    &:hover,
+                    &.active {
+                        // background-color: rgba(255, 255, 255, 0.5);
+                        font-weight: bold;
+                        border-radius: 5px;
+                        color: #fff;
+                        text-shadow: 0px 0px 5px #fff, 0px 0px 10px #fff, 0px 0px 15px #fff;
+                    }
+
+                    &.active {
+
+                        svg {
+                            animation: oxxo 1s infinite forwards alternate;
+
+                            @keyframes oxxo {
+                                0% {
+                                    transform: scale(0.5)
+                                }
+
+                                100% {
+                                    transform: scale(1)
+                                }
+                            }
+                        }
+
+                    }
+                }
+
+                li {
+
+                    svg {
+                        margin: auto;
+                        vertical-align: middle;
+                    }
+
+                    h3 {
+                        flex: 1;
+                        margin: auto;
+                        display: inline-block;
+                        padding-left: 5%;
+                    }
+                }
+            }
+        }
+    }
+
+    .col-10 {
+        background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1)), url('../../img/bg2.jpg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        // padding: 5%;
+        border-radius: 30px;
+        background-color: transparent;
+        max-width: 70%;
+        min-height: 700px;
+        margin: auto;
+
+        h2,
+        h4 {
+            margin: 1% 0;
+        }
+
+        input[type="submit"] {
+            border-radius: 50px;
+            box-shadow: 0 5px 0 #000;
+            cursor: pointer;
+            padding: 3px 0;
+            width: 100px;
+            transform: translateY(-5px);
+
+            &:hover {
+                transform: translateY(0px);
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+.index {
+
+    h1 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 3em;
+        margin: 2% auto;
+    }
+
+    hr {
+        margin: 0;
+
+    }
+
+    .nav {
+        display: inline-block;
+        margin: 0 auto;
+        border: none;
+        width: 100%;
+
+        .nav-item {
+            margin: 0 auto;
+            width: auto;
+            border: nonoe;
+            // display: inline-block;
+
+
+            .nav-link {
+                padding: 0;
+                text-align: center;
+                margin: 0 auto;
+                background-color: transparent;
+                border: none;
+                // display: inline-block;
+                // width: 100%;
+
+                h1 {
+                    font-size: 2.5em;
+                    width: 100%;
+                    width: max-content;
+                    text-align: center;
+                    display: inline-block;
+                }
+
+            }
+
+        }
+    }
+
+    .tab-content {
+        .table {
+
+            thead {
+
+                tr {
+
+                    th {
+                        font-size: 1.5em;
+                        text-align: center;
+                        // background-color: #666;
+                    }
+
+                    td {
+                        text-align: center;
+
+                        h4 {
+                            margin: 10px auto;
+                            line-height: 1;
+                        }
+                    }
+
+                    &:nth-child(odd) {
+                        background-color: #D2E9FF;
+                    }
+
+                    &:nth-child(even) {
+                        background-color: #fff;
+                    }
+                }
+            }
+
+
+        }
+    }
+
+
+}
+
+.form_in {
+
+    form {
+        margin-top: 3%;
+
+        h2,
+        p {
+            display: inline-block;
+        }
+
+        select {
+            font-size: 1.5rem;
+            margin-right: 1%;
+        }
+
+    }
+
+    .table {
+
+        th {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        td {
+            font-size: 1.2rem;
+            text-align: center;
+
+        }
+    }
+
+}
+
+.stockG {
+    h4 {}
+
+    form {
+        margin-top: 3%;
+
+        h4,
+        p {
+            display: inline-block;
+        }
+
+        select {
+            font-size: 1.5rem;
+            margin-right: 1%;
+        }
+
+    }
+
+    .table {
+
+        th {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        td {
+            font-size: 1.2rem;
+            text-align: center;
+
+        }
+    }
+
+
+}
+
+.inquire {
+
+    form {
+        margin-top: 3%;
+
+        h2,
+        p {
+            display: inline-block;
+        }
+
+        select {
+            font-size: 1.5rem;
+            margin-right: 1%;
+        }
+    }
+
+    .table {
+        // opacity: 0;
+
+        th {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        td {
+            font-size: 1.2rem;
+            text-align: center;
+
+        }
+
+        thead {
+
+            tr {
+                background-color: #D2E9FF;
+            }
+
+        }
+
+
+    }
+
+    .basic {
+        // opacity: 0;
+
+        div {
+            // display: inline-block;
+        }
+    }
+
+
+}
+
+.select {
+
+    form {
+        margin-top: 3%;
+
+        h4,
+        p {
+            display: inline-block;
+        }
+
+        select {
+            font-size: 1.5rem;
+            margin-right: 1%;
+        }
+    }
+
+    .table {
+
+        th {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        td {
+            font-size: 1.2rem;
+            text-align: center;
+
+        }
+
+        thead {
+
+            tr {
+                background-color: #D2E9FF;
+            }
+
+        }
+    }
+
+    .all_data {
+        height: 500px;
+        overflow-y: auto;
+
+        .data {
+            height: 100%;
+        }
+
+    }
+
+}
+
+.db {
+
+    form {
+        margin-top: 3%;
+
+        h4,
+        p {
+            display: inline-block;
+        }
+
+        select {
+            font-size: 1.5rem;
+            margin-right: 1%;
+        }
+    }
+
+    .table {
+
+        th {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        td {
+            font-size: 1.2rem;
+            text-align: center;
+
+        }
+
+        thead {
+
+            tr {
+                background-color: #D2E9FF;
+            }
+
+        }
+    }
+
+    .all_data {
+        height: 500px;
+        overflow-y: auto;
+
+        .data {
+            height: 100%;
+        }
+
+    }
+
+}
+
+.getGraphics {
+
+    form {
+        margin-top: 3%;
+
+        h4,
+        p {
+            display: inline-block;
+        }
+
+        select {
+            font-size: 1.5rem;
+            margin-right: 1%;
+        }
+    }
+
+    .table {
+
+        th {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        td {
+            font-size: 1.2rem;
+            text-align: center;
+
+        }
+    }
+
+
+}

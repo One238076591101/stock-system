@@ -1,0 +1,324 @@
+/* main */
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background: #000 url("../../img/bg3.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+.row {
+  margin: 0;
+}
+.row .col-2 {
+  background-color: #000;
+  padding: 0;
+  height: 100vh;
+  color: white;
+  background-image: url("../../img/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  margin: 0;
+  padding: 0 2%;
+}
+@-webkit-keyframes bg {
+  0% {
+    background-position: 10%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}
+@keyframes bg {
+  0% {
+    background-position: 10%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}
+.row .col-2 .title h3 {
+  margin: 0;
+  padding: 30% 0;
+}
+.row .col-2 .sidebar-sticky .nav .nav-link {
+  padding: 1rem;
+}
+.row .col-2 .sidebar-sticky .nav a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.row .col-2 .sidebar-sticky .nav a:hover, .row .col-2 .sidebar-sticky .nav a.active {
+  font-weight: bold;
+  border-radius: 5px;
+  color: #fff;
+  text-shadow: 0px 0px 5px #fff, 0px 0px 10px #fff, 0px 0px 15px #fff;
+}
+.row .col-2 .sidebar-sticky .nav a.active svg {
+  -webkit-animation: oxxo 1s infinite forwards alternate;
+          animation: oxxo 1s infinite forwards alternate;
+}
+@-webkit-keyframes oxxo {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes oxxo {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+.row .col-2 .sidebar-sticky .nav li svg {
+  margin: auto;
+  vertical-align: middle;
+}
+.row .col-2 .sidebar-sticky .nav li h3 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: auto;
+  display: inline-block;
+  padding-left: 5%;
+}
+.row .col-10 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(white)), url("../../img/bg2.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.8), white), url("../../img/bg2.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 30px;
+  background-color: transparent;
+  max-width: 70%;
+  min-height: 700px;
+  margin: auto;
+}
+.row .col-10 h2,
+.row .col-10 h4 {
+  margin: 1% 0;
+}
+.row .col-10 input[type=submit] {
+  border-radius: 50px;
+  -webkit-box-shadow: 0 5px 0 #000;
+          box-shadow: 0 5px 0 #000;
+  cursor: pointer;
+  padding: 3px 0;
+  width: 100px;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+.row .col-10 input[type=submit]:hover {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.index h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3em;
+  margin: 2% auto;
+}
+.index hr {
+  margin: 0;
+}
+.index .nav {
+  display: inline-block;
+  margin: 0 auto;
+  border: none;
+  width: 100%;
+}
+.index .nav .nav-item {
+  margin: 0 auto;
+  width: auto;
+  border: nonoe;
+}
+.index .nav .nav-item .nav-link {
+  padding: 0;
+  text-align: center;
+  margin: 0 auto;
+  background-color: transparent;
+  border: none;
+}
+.index .nav .nav-item .nav-link h1 {
+  font-size: 2.5em;
+  width: 100%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  text-align: center;
+  display: inline-block;
+}
+.index .tab-content .table thead tr th {
+  font-size: 1.5em;
+  text-align: center;
+}
+.index .tab-content .table thead tr td {
+  text-align: center;
+}
+.index .tab-content .table thead tr td h4 {
+  margin: 10px auto;
+  line-height: 1;
+}
+.index .tab-content .table thead tr:nth-child(odd) {
+  background-color: #D2E9FF;
+}
+.index .tab-content .table thead tr:nth-child(even) {
+  background-color: #fff;
+}
+
+.form_in form {
+  margin-top: 3%;
+}
+.form_in form h2,
+.form_in form p {
+  display: inline-block;
+}
+.form_in form select {
+  font-size: 1.5rem;
+  margin-right: 1%;
+}
+.form_in .table th {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.form_in .table td {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.stockG form {
+  margin-top: 3%;
+}
+.stockG form h4,
+.stockG form p {
+  display: inline-block;
+}
+.stockG form select {
+  font-size: 1.5rem;
+  margin-right: 1%;
+}
+.stockG .table th {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.stockG .table td {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.inquire form {
+  margin-top: 3%;
+}
+.inquire form h2,
+.inquire form p {
+  display: inline-block;
+}
+.inquire form select {
+  font-size: 1.5rem;
+  margin-right: 1%;
+}
+.inquire .table th {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.inquire .table td {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.inquire .table thead tr {
+  background-color: #D2E9FF;
+}
+.select form {
+  margin-top: 3%;
+}
+.select form h4,
+.select form p {
+  display: inline-block;
+}
+.select form select {
+  font-size: 1.5rem;
+  margin-right: 1%;
+}
+.select .table th {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.select .table td {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.select .table thead tr {
+  background-color: #D2E9FF;
+}
+.select .all_data {
+  height: 500px;
+  overflow-y: auto;
+}
+.select .all_data .data {
+  height: 100%;
+}
+
+.db form {
+  margin-top: 3%;
+}
+.db form h4,
+.db form p {
+  display: inline-block;
+}
+.db form select {
+  font-size: 1.5rem;
+  margin-right: 1%;
+}
+.db .table th {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.db .table td {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.db .table thead tr {
+  background-color: #D2E9FF;
+}
+.db .all_data {
+  height: 500px;
+  overflow-y: auto;
+}
+.db .all_data .data {
+  height: 100%;
+}
+
+.getGraphics form {
+  margin-top: 3%;
+}
+.getGraphics form h4,
+.getGraphics form p {
+  display: inline-block;
+}
+.getGraphics form select {
+  font-size: 1.5rem;
+  margin-right: 1%;
+}
+.getGraphics .table th {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.getGraphics .table td {
+  font-size: 1.2rem;
+  text-align: center;
+}

@@ -1,0 +1,135 @@
+@mixin media($point) {
+    @if $point==w1680{
+        @media screen and(max-width: $w1680) {
+            @content;
+        }
+    }@else if $point==w1440{
+        @media screen and(max-width: $w1440) {
+            @content;
+        }
+    }@else if $point==w1366{
+        @media screen and(max-width: $w1366) {
+            @content;
+        }
+    }@else if $point==w1280{
+        @media screen and(max-width: $w1280) {
+            @content;
+        }
+    }@else if $point==w1200{
+        @media screen and(max-width: $w1200) {
+            @content;
+        }
+    }@else if $point==w1160 {
+        @media screen and(max-width: $w1160) {
+            @content;
+        }
+    }@else if $point==w1025 {
+        @media screen and(max-width: $w1025) {
+            @content;
+        }
+    }@else if $point==w1024 {
+        @media screen and(max-width: $w1024) {
+            @content;
+        }
+    }@else if $point==w1000 {
+        @media screen and(max-width: $w1000) {
+            @content;
+        }
+    }@else if $point==w900{
+        @media screen and(max-width: $w900) {
+            @content;
+        }
+    }@else if $point==w768 {
+        @media screen and(max-width: $w768) {
+            @content;
+        }
+    }@else if $point==w750 {
+        @media screen and(max-width: $w750) {
+            @content;
+        }
+    }@else if $point==w690 {
+        @media screen and(max-width: $w690) {
+            @content;
+        }
+    }@else if $point==w640 {
+        @media screen and(max-width: $w640) {
+            @content;
+        }
+    }@else if $point==w600 {
+        @media screen and(max-width: $w600) {
+            @content;
+        }
+    }@else if $point==w560 {
+        @media screen and(max-width: $w560) {
+            @content;
+        }
+    }@else if $point==w520 {
+        @media screen and(max-width: $w520) {
+            @content;
+        }
+    }
+    @else if $point==w480 {
+        @media screen and(max-width: $w480) {
+            @content;
+        }
+    }@else if $point==w460 {
+        @media screen and(max-width: $w460) {
+            @content;
+        }
+    }@else if $point==w414 {
+        @media screen and(max-width: $w414) {
+            @content;
+        }
+    }@else if $point==w400 {
+        @media screen and(max-width: $w400) {
+            @content;
+        }
+    }
+    @else if $point==w375 {
+        @media screen and(max-width: $w375) {
+            @content;
+        }
+    }@else if $point==w360 {
+        @media screen and(max-width: $w360) {
+            @content;
+        }
+    }@else if $point==w320 {
+        @media screen and(max-width: $w320) {
+            @content;
+        }
+    }
+}
+
+
+
+/* pc */
+$w1680: 1680px;
+$w1440: 1440px;
+$w1366: 1366px;
+$w1280: 1280px;
+$w1200: 1200px;
+$w1160: 1160px;
+$w1025: 1025px;
+$w1024: 1024px;
+$w1000: 1000px;
+$w900: 900px;
+
+$w768: 768px;
+$w750: 750px;
+$w690: 690px;
+$w640: 640px;
+$w600: 600px;
+$w560: 560px;
+$w520: 520px;
+$w460: 460px;
+$w414: 414px;
+$w400: 400px;
+$w375: 375px;
+$w360: 360px;
+$w320: 320px;
+
+
+
+
+
+
